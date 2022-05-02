@@ -11,6 +11,7 @@ using System.Drawing.Drawing2D;
 
 namespace ATESTAT {
     public partial class Game : Form {
+        public static int[] playerPosition = new int[3];
         public Game() {    
         InitializeComponent();
         this.ControlBox = false;
@@ -73,12 +74,56 @@ namespace ATESTAT {
             panel1.BackgroundImage = Image.FromFile(y + ".png");
             panel1.Refresh();
         }
-        /*if(click%2==1) {
-                switch()
+        if(click%2==1) {
+                playerPosition[1] += x;
+                foreach (Player p in SelectPlayer1.playerList) {
+                    if(p.Number==1) {
+                        switch(p.Color) {
+                            case "Red": {
+                                    pictureBox2.Left += x*30;
+                                    break;
+                                }
+                            case "Yellow": {
+                                    pictureBox3.Left += x * 30;
+                                    break;
+                                }
+                            case "Blue": {
+                                    pictureBox4.Left += x * 30;
+                                    break;
+                                }
+                            case "Green": {
+                                    pictureBox5.Left += x * 30;
+                                    break;
+                                }
+                        }
+                    }
+                }
             }
         else {
-
-            }*/
+                playerPosition[2] += x;
+                foreach (Player p in SelectPlayer1.playerList) {
+                    if (p.Number == 2) {
+                        switch (p.Color) {
+                            case "Red": {
+                                    pictureBox2.Left += x * 30;
+                                    break;
+                                }
+                            case "Yellow": {
+                                    pictureBox3.Left += x * 30;
+                                    break;
+                                }
+                            case "Blue": {
+                                    pictureBox4.Left += x * 30;
+                                    break;
+                                }
+                            case "Green": {
+                                    pictureBox5.Left += x * 30;
+                                    break;
+                                }
+                        }
+                    }
+                }
+            }
     }
 
         private void PictureBox3_Click(object sender, EventArgs e) {
