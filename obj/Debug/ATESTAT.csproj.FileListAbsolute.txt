@@ -1,0 +1,15 @@
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.csprojAssemblyReference.cache
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.Properties.Resources.resources
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.csproj.GenerateResource.cache
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.csproj.CoreCompileInputs.cache
+E:\ATESTAT\ATESTAT\ATESTAT\bin\Debug\ATESTAT.exe.config
+E:\ATESTAT\ATESTAT\ATESTAT\bin\Debug\ATESTAT.exe
+E:\ATESTAT\ATESTAT\ATESTAT\bin\Debug\ATESTAT.pdb
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.Game.resources
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.Start.resources
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.exe
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.pdb
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.Helper.resources
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.SelectPlayer1.resources
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.SelectPlayer2.resources
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.SelectDice.resources
