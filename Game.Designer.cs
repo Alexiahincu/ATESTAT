@@ -39,7 +39,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(85, 300);
+            this.button2.Location = new System.Drawing.Point(85, 397);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
@@ -49,7 +49,8 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(29, 90);
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Location = new System.Drawing.Point(38, 196);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(179, 173);
             this.panel1.TabIndex = 7;
@@ -59,9 +60,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(139, 437);
+            this.pictureBox2.Location = new System.Drawing.Point(222, 554);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 48);
+            this.pictureBox2.Size = new System.Drawing.Size(26, 39);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -71,20 +72,21 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(139, 485);
+            this.pictureBox4.Location = new System.Drawing.Point(222, 592);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(36, 49);
+            this.pictureBox4.Size = new System.Drawing.Size(26, 39);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.PictureBox4_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(172, 437);
+            this.pictureBox3.Location = new System.Drawing.Point(245, 554);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(36, 48);
+            this.pictureBox3.Size = new System.Drawing.Size(26, 39);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -93,9 +95,9 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Gray;
-            this.button1.Location = new System.Drawing.Point(771, 511);
+            this.button1.Location = new System.Drawing.Point(890, 601);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(96, 43);
             this.button1.TabIndex = 0;
             this.button1.Text = "quit";
             this.button1.UseVisualStyleBackColor = false;
@@ -105,9 +107,9 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(172, 485);
+            this.pictureBox5.Location = new System.Drawing.Point(245, 592);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(36, 49);
+            this.pictureBox5.Size = new System.Drawing.Size(26, 39);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 6;
             this.pictureBox5.TabStop = false;
@@ -117,9 +119,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::ATESTAT.Properties.Resources.tabla11;
+            this.BackgroundImage = global::ATESTAT.Properties.Resources.tabla2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(900, 593);
+            this.ClientSize = new System.Drawing.Size(1075, 685);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox4);

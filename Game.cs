@@ -69,47 +69,43 @@ namespace ATESTAT {
 
     private void Button2_Click(object sender, EventArgs e) {
         click++;
-        int i = 0, n = 0, x = 0, y = 0;
+        int x = 0, y = 0;
         Random nr = new Random();
-        n = nr.Next(1, 21) + 20;
-        for (i = 1; i <= n; i++) {
-            x = nr.Next(1, 7);
-            y = x + SelectDice.diceNumber;
-            panel1.BackgroundImage = Image.FromFile(y + ".png");
-            panel1.Refresh();
-        }
+        x = nr.Next(1, 7);
+        y = x + SelectDice.diceNumber;
+        panel1.BackgroundImage = Image.FromFile(y + ".png");       
         if(click%2==1) {
                 foreach (Player p in SelectPlayer1.playerList) {
                     if(p.Number==1) {
                         switch(p.Color) {
                             case "Red": {
-                                    if (playerPosition[1] + x <= 26) {
+                                    if (playerPosition[1] + x <= 50) {
                                         while (x > 0) {
                                             if (playerPosition[1] == 0) {
-                                                pictureBox2.Left += 95;
+                                                pictureBox2.Left += 75;
                                                 playerPosition[1]++;
                                                 x--;
                                             }
-                                            while (playerPosition[1] % 5 != 0 && x > 0) {
+                                            while (playerPosition[1] % 7 != 0 && x > 0) {
                                                 if (positionLine[1] % 2 == 1)
-                                                    pictureBox2.Left += 95;
+                                                    pictureBox2.Left += 75;
                                                 else
-                                                    pictureBox2.Left -= 95;
+                                                    pictureBox2.Left -= 75;
                                                 x--;
                                                 playerPosition[1]++;
                                             }
                                             if (x > 0) {
-                                                if (positionLine[1] != 5)
-                                                    pictureBox2.Top -= 100;
+                                                if (positionLine[1] != 7)
+                                                    pictureBox2.Top -= 88;
                                                 else
-                                                    pictureBox2.Left += 95;
+                                                    pictureBox2.Left += 75;
                                                 x--;
                                                 playerPosition[1]++;
                                                 positionLine[1]++;
                                             }
                                         }
                                     }
-                                    if (playerPosition[1] == 26) {
+                                    if (playerPosition[1] == 50) {
                                         Form mod = new RedWins();
                                         mod.Owner = this;
                                         mod.Show();
@@ -118,33 +114,33 @@ namespace ATESTAT {
                                     break;
                                 }
                             case "Yellow": {
-                                    if (playerPosition[1] + x <= 26) {
+                                    if (playerPosition[1] + x <= 50) {
                                         while (x > 0) {
                                             if (playerPosition[1] == 0) {
-                                                pictureBox3.Left += 95;
+                                                pictureBox3.Left += 75;
                                                 playerPosition[1]++;
                                                 x--;
                                             }
-                                            while (playerPosition[1] % 5 != 0 && x > 0) {
+                                            while (playerPosition[1] % 7 != 0 && x > 0) {
                                                 if (positionLine[1] % 2 == 1)
-                                                    pictureBox3.Left += 95;
+                                                    pictureBox3.Left += 75;
                                                 else
-                                                    pictureBox3.Left -= 95;
+                                                    pictureBox3.Left -= 75;
                                                 x--;
                                                 playerPosition[1]++;
                                             }
                                             if (x > 0) {
-                                                if (positionLine[1] != 5)
-                                                    pictureBox3.Top -= 100;
+                                                if (positionLine[1] != 7)
+                                                    pictureBox3.Top -= 88;
                                                 else
-                                                    pictureBox3.Left += 95;
+                                                    pictureBox3.Left += 75;
                                                 x--;
                                                 playerPosition[1]++;
                                                 positionLine[1]++;
                                             }
                                         }
                                     }
-                                    if (playerPosition[1] == 26) {
+                                    if (playerPosition[1] == 50) {
                                         Form mod = new YellowWins();
                                         mod.Owner = this;
                                         mod.Show();
@@ -153,33 +149,33 @@ namespace ATESTAT {
                                     break;
                                 }
                             case "Blue": {
-                                    if (playerPosition[1] + x <= 26) {
+                                    if (playerPosition[1] + x <= 50) {
                                         while (x > 0) {
                                             if (playerPosition[1] == 0) {
-                                                pictureBox4.Left += 95;
+                                                pictureBox4.Left += 75;
                                                 playerPosition[1]++;
                                                 x--;
                                             }
-                                            while (playerPosition[1] % 5 != 0 && x > 0) {
+                                            while (playerPosition[1] % 7 != 0 && x > 0) {
                                                 if (positionLine[1] % 2 == 1)
-                                                    pictureBox4.Left += 95;
+                                                    pictureBox4.Left += 75;
                                                 else
-                                                    pictureBox4.Left -= 95;
+                                                    pictureBox4.Left -= 75;
                                                 x--;
                                                 playerPosition[1]++;
                                             }
                                             if (x > 0) {
-                                                if (positionLine[1] != 5)
-                                                    pictureBox4.Top -= 100;
+                                                if (positionLine[1] != 7)
+                                                    pictureBox4.Top -= 88;
                                                 else
-                                                    pictureBox4.Left += 95;
+                                                    pictureBox4.Left += 75;
                                                 x--;
                                                 playerPosition[1]++;
                                                 positionLine[1]++;
                                             }
                                         }
                                     }
-                                    if (playerPosition[1] == 26) {
+                                    if (playerPosition[1] == 50) {
                                         Form mod = new BlueWins();
                                         mod.Owner = this;
                                         mod.Show();
@@ -188,33 +184,33 @@ namespace ATESTAT {
                                     break;
                                 }
                             case "Green": {
-                                    if (playerPosition[1] + x <= 26) {
+                                    if (playerPosition[1] + x <= 50) {
                                         while (x > 0) {
                                             if (playerPosition[1] == 0) {
-                                                pictureBox5.Left += 95;
+                                                pictureBox5.Left += 75;
                                                 playerPosition[1]++;
                                                 x--;
                                             }
-                                            while (playerPosition[1] % 5 != 0 && x > 0) {
+                                            while (playerPosition[1] % 7 != 0 && x > 0) {
                                                 if (positionLine[1] % 2 == 1)
-                                                    pictureBox5.Left += 95;
+                                                    pictureBox5.Left += 75;
                                                 else
-                                                    pictureBox5.Left -= 95;
+                                                    pictureBox5.Left -= 75;
                                                 x--;
                                                 playerPosition[1]++;
                                             }
                                             if (x > 0) {
-                                                if (positionLine[1] != 5)
-                                                    pictureBox5.Top -= 100;
+                                                if (positionLine[1] != 7)
+                                                    pictureBox5.Top -= 88;
                                                 else
-                                                    pictureBox5.Left += 95;
+                                                    pictureBox5.Left += 75;
                                                 x--;
                                                 playerPosition[1]++;
                                                 positionLine[1]++;
                                             }
                                         }
                                     }
-                                    if (playerPosition[1] == 26) {
+                                    if (playerPosition[1] == 50) {
                                         Form mod = new GreenWins();
                                         mod.Owner = this;
                                         mod.Show();
@@ -231,33 +227,33 @@ namespace ATESTAT {
                     if (p.Number == 2) {
                         switch (p.Color) {
                             case "Red": {
-                                    if (playerPosition[2] + x <= 26) {
+                                    if (playerPosition[2] + x <= 50) {
                                         while (x > 0) {
                                             if (playerPosition[2] == 0) {
-                                                pictureBox2.Left += 95;
+                                                pictureBox2.Left += 75;
                                                 playerPosition[2]++;
                                                 x--;
                                             }
-                                            while (playerPosition[2] % 5 != 0 && x > 0) {
+                                            while (playerPosition[2] % 7 != 0 && x > 0) {
                                                 if (positionLine[2] % 2 == 1)
-                                                    pictureBox2.Left += 95;
+                                                    pictureBox2.Left += 75;
                                                 else
-                                                    pictureBox2.Left -= 95;
+                                                    pictureBox2.Left -= 75;
                                                 x--;
                                                 playerPosition[2]++;
                                             }
                                             if (x > 0) {
-                                                if (positionLine[2] != 5)
-                                                    pictureBox2.Top -= 100;
+                                                if (positionLine[2] != 7)
+                                                    pictureBox2.Top -= 88;
                                                 else
-                                                    pictureBox2.Left += 95;
+                                                    pictureBox2.Left += 75;
                                                 x--;
                                                 playerPosition[2]++;
                                                 positionLine[2]++;
                                             }
                                         }
                                     }
-                                    if (playerPosition[2] == 26) {
+                                    if (playerPosition[2] == 50) {
                                         Form mod = new RedWins();
                                         mod.Owner = this;
                                         mod.Show();
@@ -266,33 +262,33 @@ namespace ATESTAT {
                                     break;
                                 }
                             case "Yellow": {
-                                    if (playerPosition[2] + x <= 26) {
+                                    if (playerPosition[2] + x <= 50) {
                                         while (x > 0) {
                                             if (playerPosition[2] == 0) {
-                                                pictureBox3.Left += 95;
+                                                pictureBox3.Left += 75;
                                                 playerPosition[2]++;
                                                 x--;
                                             }
-                                            while (playerPosition[2] % 5 != 0 && x > 0) {
+                                            while (playerPosition[2] % 7 != 0 && x > 0) {
                                                 if (positionLine[2] % 2 == 1)
-                                                    pictureBox3.Left += 95;
+                                                    pictureBox3.Left += 75;
                                                 else
-                                                    pictureBox3.Left -= 95;
+                                                    pictureBox3.Left -= 75;
                                                 x--;
                                                 playerPosition[2]++;
                                             }
                                             if (x > 0) {
-                                                if (positionLine[2] != 5)
-                                                    pictureBox3.Top -= 100;
+                                                if (positionLine[2] != 7)
+                                                    pictureBox3.Top -= 88;
                                                 else
-                                                    pictureBox3.Left += 95;
+                                                    pictureBox3.Left += 75;
                                                 x--;
                                                 playerPosition[2]++;
                                                 positionLine[2]++;
                                             }
                                         }
                                     }
-                                    if (playerPosition[2] == 26) {
+                                    if (playerPosition[2] == 50) {
                                         Form mod = new YellowWins();
                                         mod.Owner = this;
                                         mod.Show();
@@ -301,33 +297,33 @@ namespace ATESTAT {
                                     break;
                                 }
                             case "Blue": {
-                                    if (playerPosition[2] + x <= 26) {
+                                    if (playerPosition[2] + x <= 50) {
                                         while (x > 0) {
                                             if (playerPosition[2] == 0) {
-                                                pictureBox4.Left += 95;
+                                                pictureBox4.Left += 75;
                                                 playerPosition[2]++;
                                                 x--;
                                             }
-                                            while (playerPosition[2] % 5 != 0 && x > 0) {
+                                            while (playerPosition[2] % 7 != 0 && x > 0) {
                                                 if (positionLine[2] % 2 == 1)
-                                                    pictureBox4.Left += 95;
+                                                    pictureBox4.Left += 75;
                                                 else
-                                                    pictureBox4.Left -= 95;
+                                                    pictureBox4.Left -= 75;
                                                 x--;
                                                 playerPosition[2]++;
                                             }
                                             if (x > 0) {
-                                                if (positionLine[2] != 5)
-                                                    pictureBox4.Top -= 100;
+                                                if (positionLine[2] != 7)
+                                                    pictureBox4.Top -= 88;
                                                 else
-                                                    pictureBox4.Left += 95;
+                                                    pictureBox4.Left += 75;
                                                 x--;
                                                 playerPosition[2]++;
                                                 positionLine[2]++;
                                             }
                                         }
                                     }
-                                    if (playerPosition[2] == 26) {
+                                    if (playerPosition[2] == 50) {
                                         Form mod = new BlueWins();
                                         mod.Owner = this;
                                         mod.Show();
@@ -336,33 +332,33 @@ namespace ATESTAT {
                                     break;
                                 }
                             case "Green": {
-                                    if (playerPosition[2] + x <= 26) {
+                                    if (playerPosition[2] + x <= 50) {
                                         while (x > 0) {
                                             if (playerPosition[2] == 0) {
-                                                pictureBox5.Left += 95;
+                                                pictureBox5.Left += 75;
                                                 playerPosition[2]++;
                                                 x--;
                                             }
-                                            while (playerPosition[2] % 5 != 0 && x > 0) {
+                                            while (playerPosition[2] % 7 != 0 && x > 0) {
                                                 if (positionLine[2] % 2 == 1)
-                                                    pictureBox5.Left += 95;
+                                                    pictureBox5.Left += 75;
                                                 else
-                                                    pictureBox5.Left -= 95;
+                                                    pictureBox5.Left -= 75;
                                                 x--;
                                                 playerPosition[2]++;
                                             }
                                             if (x > 0) {
-                                                if (positionLine[2] != 5)
-                                                    pictureBox5.Top -= 100;
+                                                if (positionLine[2] != 7)
+                                                    pictureBox5.Top -= 88;
                                                 else
-                                                    pictureBox5.Left += 95;
+                                                    pictureBox5.Left += 75;
                                                 x--;
                                                 playerPosition[2]++;
                                                 positionLine[2]++;
                                             }
                                         }
                                     }
-                                    if(playerPosition[2]==26) {
+                                    if(playerPosition[2]==50) {
                                         Form mod = new GreenWins();
                                         mod.Owner = this;
                                         mod.Show();
@@ -377,6 +373,10 @@ namespace ATESTAT {
     }
 
         private void PictureBox3_Click(object sender, EventArgs e) {
+
+        }
+
+        private void PictureBox4_Click(object sender, EventArgs e) {
 
         }
 
