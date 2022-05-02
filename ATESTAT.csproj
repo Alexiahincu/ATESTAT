@@ -48,6 +48,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="color.cs" />
+    <Compile Include="BlueWins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlueWins.Designer.cs">
+      <DependentUpon>BlueWins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GreenWins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GreenWins.Designer.cs">
+      <DependentUpon>GreenWins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YellowWins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YellowWins.Designer.cs">
+      <DependentUpon>YellowWins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RedWins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RedWins.Designer.cs">
+      <DependentUpon>RedWins.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -92,8 +116,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BlueWins.resx">
+      <DependentUpon>BlueWins.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GreenWins.resx">
+      <DependentUpon>GreenWins.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Helper.resx">
       <DependentUpon>Helper.cs</DependentUpon>
@@ -101,6 +131,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RedWins.resx">
+      <DependentUpon>RedWins.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectDice.resx">
       <DependentUpon>SelectDice.cs</DependentUpon>
@@ -113,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YellowWins.resx">
+      <DependentUpon>YellowWins.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

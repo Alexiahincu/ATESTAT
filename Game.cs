@@ -12,8 +12,12 @@ using System.Drawing.Drawing2D;
 namespace ATESTAT {
     public partial class Game : Form {
         public static int[] playerPosition = new int[3];
+        public static int[] positionLine = new int[3];
+        public static bool finished = false;
         public Game() {    
         InitializeComponent();
+            playerPosition[1] = playerPosition[2] = 0;
+            positionLine[1] = positionLine[2] = 1;
         this.ControlBox = false;
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
@@ -75,24 +79,147 @@ namespace ATESTAT {
             panel1.Refresh();
         }
         if(click%2==1) {
-                playerPosition[1] += x;
                 foreach (Player p in SelectPlayer1.playerList) {
                     if(p.Number==1) {
                         switch(p.Color) {
                             case "Red": {
-                                    pictureBox2.Left += x*30;
+                                    if (playerPosition[1] + x <= 26) {
+                                        while (x > 0) {
+                                            if (playerPosition[1] == 0) {
+                                                pictureBox2.Left += 95;
+                                                playerPosition[1]++;
+                                                x--;
+                                            }
+                                            while (playerPosition[1] % 5 != 0 && x > 0) {
+                                                if (positionLine[1] % 2 == 1)
+                                                    pictureBox2.Left += 95;
+                                                else
+                                                    pictureBox2.Left -= 95;
+                                                x--;
+                                                playerPosition[1]++;
+                                            }
+                                            if (x > 0) {
+                                                if (positionLine[1] != 5)
+                                                    pictureBox2.Top -= 100;
+                                                else
+                                                    pictureBox2.Left += 95;
+                                                x--;
+                                                playerPosition[1]++;
+                                                positionLine[1]++;
+                                            }
+                                        }
+                                    }
+                                    if (playerPosition[1] == 26) {
+                                        Form mod = new RedWins();
+                                        mod.Owner = this;
+                                        mod.Show();
+                                        this.Hide();
+                                    }
                                     break;
                                 }
                             case "Yellow": {
-                                    pictureBox3.Left += x * 30;
+                                    if (playerPosition[1] + x <= 26) {
+                                        while (x > 0) {
+                                            if (playerPosition[1] == 0) {
+                                                pictureBox3.Left += 95;
+                                                playerPosition[1]++;
+                                                x--;
+                                            }
+                                            while (playerPosition[1] % 5 != 0 && x > 0) {
+                                                if (positionLine[1] % 2 == 1)
+                                                    pictureBox3.Left += 95;
+                                                else
+                                                    pictureBox3.Left -= 95;
+                                                x--;
+                                                playerPosition[1]++;
+                                            }
+                                            if (x > 0) {
+                                                if (positionLine[1] != 5)
+                                                    pictureBox3.Top -= 100;
+                                                else
+                                                    pictureBox3.Left += 95;
+                                                x--;
+                                                playerPosition[1]++;
+                                                positionLine[1]++;
+                                            }
+                                        }
+                                    }
+                                    if (playerPosition[1] == 26) {
+                                        Form mod = new YellowWins();
+                                        mod.Owner = this;
+                                        mod.Show();
+                                        this.Hide();
+                                    }
                                     break;
                                 }
                             case "Blue": {
-                                    pictureBox4.Left += x * 30;
+                                    if (playerPosition[1] + x <= 26) {
+                                        while (x > 0) {
+                                            if (playerPosition[1] == 0) {
+                                                pictureBox4.Left += 95;
+                                                playerPosition[1]++;
+                                                x--;
+                                            }
+                                            while (playerPosition[1] % 5 != 0 && x > 0) {
+                                                if (positionLine[1] % 2 == 1)
+                                                    pictureBox4.Left += 95;
+                                                else
+                                                    pictureBox4.Left -= 95;
+                                                x--;
+                                                playerPosition[1]++;
+                                            }
+                                            if (x > 0) {
+                                                if (positionLine[1] != 5)
+                                                    pictureBox4.Top -= 100;
+                                                else
+                                                    pictureBox4.Left += 95;
+                                                x--;
+                                                playerPosition[1]++;
+                                                positionLine[1]++;
+                                            }
+                                        }
+                                    }
+                                    if (playerPosition[1] == 26) {
+                                        Form mod = new BlueWins();
+                                        mod.Owner = this;
+                                        mod.Show();
+                                        this.Hide();
+                                    }
                                     break;
                                 }
                             case "Green": {
-                                    pictureBox5.Left += x * 30;
+                                    if (playerPosition[1] + x <= 26) {
+                                        while (x > 0) {
+                                            if (playerPosition[1] == 0) {
+                                                pictureBox5.Left += 95;
+                                                playerPosition[1]++;
+                                                x--;
+                                            }
+                                            while (playerPosition[1] % 5 != 0 && x > 0) {
+                                                if (positionLine[1] % 2 == 1)
+                                                    pictureBox5.Left += 95;
+                                                else
+                                                    pictureBox5.Left -= 95;
+                                                x--;
+                                                playerPosition[1]++;
+                                            }
+                                            if (x > 0) {
+                                                if (positionLine[1] != 5)
+                                                    pictureBox5.Top -= 100;
+                                                else
+                                                    pictureBox5.Left += 95;
+                                                x--;
+                                                playerPosition[1]++;
+                                                positionLine[1]++;
+                                            }
+                                        }
+                                    }
+                                    if (playerPosition[1] == 26) {
+                                        Form mod = new GreenWins();
+                                        mod.Owner = this;
+                                        mod.Show();
+                                        this.Hide();
+                                    }
                                     break;
                                 }
                         }
@@ -100,24 +227,147 @@ namespace ATESTAT {
                 }
             }
         else {
-                playerPosition[2] += x;
                 foreach (Player p in SelectPlayer1.playerList) {
                     if (p.Number == 2) {
                         switch (p.Color) {
                             case "Red": {
-                                    pictureBox2.Left += x * 30;
+                                    if (playerPosition[2] + x <= 26) {
+                                        while (x > 0) {
+                                            if (playerPosition[2] == 0) {
+                                                pictureBox2.Left += 95;
+                                                playerPosition[2]++;
+                                                x--;
+                                            }
+                                            while (playerPosition[2] % 5 != 0 && x > 0) {
+                                                if (positionLine[2] % 2 == 1)
+                                                    pictureBox2.Left += 95;
+                                                else
+                                                    pictureBox2.Left -= 95;
+                                                x--;
+                                                playerPosition[2]++;
+                                            }
+                                            if (x > 0) {
+                                                if (positionLine[2] != 5)
+                                                    pictureBox2.Top -= 100;
+                                                else
+                                                    pictureBox2.Left += 95;
+                                                x--;
+                                                playerPosition[2]++;
+                                                positionLine[2]++;
+                                            }
+                                        }
+                                    }
+                                    if (playerPosition[2] == 26) {
+                                        Form mod = new RedWins();
+                                        mod.Owner = this;
+                                        mod.Show();
+                                        this.Hide();
+                                    }
                                     break;
                                 }
                             case "Yellow": {
-                                    pictureBox3.Left += x * 30;
+                                    if (playerPosition[2] + x <= 26) {
+                                        while (x > 0) {
+                                            if (playerPosition[2] == 0) {
+                                                pictureBox3.Left += 95;
+                                                playerPosition[2]++;
+                                                x--;
+                                            }
+                                            while (playerPosition[2] % 5 != 0 && x > 0) {
+                                                if (positionLine[2] % 2 == 1)
+                                                    pictureBox3.Left += 95;
+                                                else
+                                                    pictureBox3.Left -= 95;
+                                                x--;
+                                                playerPosition[2]++;
+                                            }
+                                            if (x > 0) {
+                                                if (positionLine[2] != 5)
+                                                    pictureBox3.Top -= 100;
+                                                else
+                                                    pictureBox3.Left += 95;
+                                                x--;
+                                                playerPosition[2]++;
+                                                positionLine[2]++;
+                                            }
+                                        }
+                                    }
+                                    if (playerPosition[2] == 26) {
+                                        Form mod = new YellowWins();
+                                        mod.Owner = this;
+                                        mod.Show();
+                                        this.Hide();
+                                    }
                                     break;
                                 }
                             case "Blue": {
-                                    pictureBox4.Left += x * 30;
+                                    if (playerPosition[2] + x <= 26) {
+                                        while (x > 0) {
+                                            if (playerPosition[2] == 0) {
+                                                pictureBox4.Left += 95;
+                                                playerPosition[2]++;
+                                                x--;
+                                            }
+                                            while (playerPosition[2] % 5 != 0 && x > 0) {
+                                                if (positionLine[2] % 2 == 1)
+                                                    pictureBox4.Left += 95;
+                                                else
+                                                    pictureBox4.Left -= 95;
+                                                x--;
+                                                playerPosition[2]++;
+                                            }
+                                            if (x > 0) {
+                                                if (positionLine[2] != 5)
+                                                    pictureBox4.Top -= 100;
+                                                else
+                                                    pictureBox4.Left += 95;
+                                                x--;
+                                                playerPosition[2]++;
+                                                positionLine[2]++;
+                                            }
+                                        }
+                                    }
+                                    if (playerPosition[2] == 26) {
+                                        Form mod = new BlueWins();
+                                        mod.Owner = this;
+                                        mod.Show();
+                                        this.Hide();
+                                    }
                                     break;
                                 }
                             case "Green": {
-                                    pictureBox5.Left += x * 30;
+                                    if (playerPosition[2] + x <= 26) {
+                                        while (x > 0) {
+                                            if (playerPosition[2] == 0) {
+                                                pictureBox5.Left += 95;
+                                                playerPosition[2]++;
+                                                x--;
+                                            }
+                                            while (playerPosition[2] % 5 != 0 && x > 0) {
+                                                if (positionLine[2] % 2 == 1)
+                                                    pictureBox5.Left += 95;
+                                                else
+                                                    pictureBox5.Left -= 95;
+                                                x--;
+                                                playerPosition[2]++;
+                                            }
+                                            if (x > 0) {
+                                                if (positionLine[2] != 5)
+                                                    pictureBox5.Top -= 100;
+                                                else
+                                                    pictureBox5.Left += 95;
+                                                x--;
+                                                playerPosition[2]++;
+                                                positionLine[2]++;
+                                            }
+                                        }
+                                    }
+                                    if(playerPosition[2]==26) {
+                                        Form mod = new GreenWins();
+                                        mod.Owner = this;
+                                        mod.Show();
+                                        this.Hide();
+                                    }
                                     break;
                                 }
                         }

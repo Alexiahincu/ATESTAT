@@ -13,3 +13,7 @@ E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.Helper.resources
 E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.SelectPlayer1.resources
 E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.SelectPlayer2.resources
 E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.SelectDice.resources
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.BlueWins.resources
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.GreenWins.resources
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.RedWins.resources
+E:\ATESTAT\ATESTAT\ATESTAT\obj\Debug\ATESTAT.YellowWins.resources
