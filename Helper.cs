@@ -12,12 +12,17 @@ namespace ATESTAT {
     public partial class Helper : Form {
         public Helper() {
             InitializeComponent();
+            richTextBox1.ReadOnly = true;
             this.ControlBox = false;
         }
 
         private void Button1_Click(object sender, EventArgs e) {
             this.Owner.Show();
             this.Close();
+        }
+
+        private void RichTextBox1_TextChanged(object sender, EventArgs e) {
+
         }
     }
 }

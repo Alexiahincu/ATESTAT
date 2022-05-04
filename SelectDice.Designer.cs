@@ -37,14 +37,17 @@
             // 
             this.listBox1.BackColor = System.Drawing.Color.NavajoWhite;
             this.listBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listBox1.Font = new System.Drawing.Font("Kristen ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.ForeColor = System.Drawing.Color.Purple;
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 29;
             this.listBox1.Items.AddRange(new object[] {
             "Set 1",
             "Set 2",
             "Set 3"});
-            this.listBox1.Location = new System.Drawing.Point(95, 109);
+            this.listBox1.Location = new System.Drawing.Point(103, 109);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(108, 43);
+            this.listBox1.Size = new System.Drawing.Size(82, 91);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.ListBox1_SelectedIndexChanged);
             // 
@@ -53,7 +56,7 @@
             this.button1.BackgroundImage = global::ATESTAT.Properties.Resources.butonax4;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(98, 185);
+            this.button1.Location = new System.Drawing.Point(97, 232);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 51);
             this.button1.TabIndex = 1;

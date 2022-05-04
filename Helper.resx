@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>This unique version of Don't Get Angry (or Mad) can be played by two players and is based on rolling a single die. The aim of the game is to move all four piece in the serpentine sense, from the starting field (START)  to the target field (FINISH), according to the score on the die.</value>
+  </data>
 </root>

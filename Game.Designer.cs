@@ -42,7 +42,7 @@
             this.button2.BackgroundImage = global::ATESTAT.Properties.Resources.butonax7;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Location = new System.Drawing.Point(76, 393);
+            this.button2.Location = new System.Drawing.Point(83, 393);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 55);
             this.button2.TabIndex = 1;
