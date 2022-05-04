@@ -63,6 +63,76 @@ namespace ATESTAT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap butonax1 {
+            get {
+                object obj = ResourceManager.GetObject("butonax1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap butonax2 {
+            get {
+                object obj = ResourceManager.GetObject("butonax2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap butonax3 {
+            get {
+                object obj = ResourceManager.GetObject("butonax3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap butonax4 {
+            get {
+                object obj = ResourceManager.GetObject("butonax4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap butonax5 {
+            get {
+                object obj = ResourceManager.GetObject("butonax5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap butonax6 {
+            get {
+                object obj = ResourceManager.GetObject("butonax6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap butonax7 {
+            get {
+                object obj = ResourceManager.GetObject("butonax7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DiceSet1 {
             get {
                 object obj = ResourceManager.GetObject("DiceSet1", resourceCulture);
@@ -93,9 +163,9 @@ namespace ATESTAT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tabla1 {
+        internal static System.Drawing.Bitmap fundalax {
             get {
-                object obj = ResourceManager.GetObject("tabla1", resourceCulture);
+                object obj = ResourceManager.GetObject("fundalax", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +173,89 @@ namespace ATESTAT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tabla11 {
+        internal static System.Drawing.Bitmap fundalaxhelp {
             get {
-                object obj = ResourceManager.GetObject("tabla11", resourceCulture);
+                object obj = ResourceManager.GetObject("fundalaxhelp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundalaxselect1 {
+            get {
+                object obj = ResourceManager.GetObject("fundalaxselect1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundalaxselect11 {
+            get {
+                object obj = ResourceManager.GetObject("fundalaxselect11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundalaxselect2 {
+            get {
+                object obj = ResourceManager.GetObject("fundalaxselect2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundalaxset {
+            get {
+                object obj = ResourceManager.GetObject("fundalaxset", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundalaxwin1 {
+            get {
+                object obj = ResourceManager.GetObject("fundalaxwin1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundalaxwin2 {
+            get {
+                object obj = ResourceManager.GetObject("fundalaxwin2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundalaxwin3 {
+            get {
+                object obj = ResourceManager.GetObject("fundalaxwin3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundalaxwin4 {
+            get {
+                object obj = ResourceManager.GetObject("fundalaxwin4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

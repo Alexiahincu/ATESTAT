@@ -60,6 +60,11 @@
     <Compile Include="GreenWins.Designer.cs">
       <DependentUpon>GreenWins.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="YellowWins.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,11 +76,6 @@
     </Compile>
     <Compile Include="RedWins.Designer.cs">
       <DependentUpon>RedWins.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SelectDice.cs">
       <SubType>Form</SubType>
@@ -201,6 +201,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\tabla2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fundalaxwin4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\butonax4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fundalaxwin3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\butonax1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fundalaxwin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fundalaxwin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\butonax5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\butonax3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\butonax6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fundalax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fundalaxhelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fundalaxselect1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\butonax2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fundalaxselect2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fundalaxset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\butonax7.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

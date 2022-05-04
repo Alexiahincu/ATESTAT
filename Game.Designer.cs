@@ -39,11 +39,13 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(99, 397);
+            this.button2.BackgroundImage = global::ATESTAT.Properties.Resources.butonax7;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Location = new System.Drawing.Point(76, 393);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(104, 55);
             this.button2.TabIndex = 1;
-            this.button2.Text = "zar!";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
@@ -94,12 +96,14 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Gray;
-            this.button1.Location = new System.Drawing.Point(890, 601);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::ATESTAT.Properties.Resources.butonax1;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Location = new System.Drawing.Point(889, 601);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 43);
+            this.button1.Size = new System.Drawing.Size(96, 54);
             this.button1.TabIndex = 0;
-            this.button1.Text = "quit";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 

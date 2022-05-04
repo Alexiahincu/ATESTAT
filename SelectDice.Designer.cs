@@ -35,31 +35,35 @@
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.Color.NavajoWhite;
+            this.listBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
             "Set 1",
             "Set 2",
             "Set 3"});
-            this.listBox1.Location = new System.Drawing.Point(95, 110);
+            this.listBox1.Location = new System.Drawing.Point(95, 109);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 43);
+            this.listBox1.Size = new System.Drawing.Size(108, 43);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.ListBox1_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(120, 335);
+            this.button1.BackgroundImage = global::ATESTAT.Properties.Resources.butonax4;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Location = new System.Drawing.Point(98, 185);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(95, 51);
             this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::ATESTAT.Properties.Resources.DiceSet3;
-            this.pictureBox3.Location = new System.Drawing.Point(483, 311);
+            this.pictureBox3.Location = new System.Drawing.Point(555, 312);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(163, 101);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -69,7 +73,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ATESTAT.Properties.Resources.DiceSet2;
-            this.pictureBox2.Location = new System.Drawing.Point(483, 170);
+            this.pictureBox2.Location = new System.Drawing.Point(555, 173);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(163, 101);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -79,7 +83,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ATESTAT.Properties.Resources.DiceSet1;
-            this.pictureBox1.Location = new System.Drawing.Point(483, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(555, 36);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(163, 101);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -90,6 +94,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ATESTAT.Properties.Resources.fundalaxset;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -97,7 +103,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Name = "SelectDice";
-            this.Text = "Form1";
+            this.Text = "Select Dice";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

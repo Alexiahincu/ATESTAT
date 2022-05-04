@@ -118,22 +118,67 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DiceSet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\DiceSet1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="butonax4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\butonax4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DiceSet2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\DiceSet2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="butonax1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\butonax1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tabla11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\tabla1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="butonax3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\butonax3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tabla1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\tabla1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tabla2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\tabla2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundalaxhelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\fundalaxhelp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="butonax2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\butonax2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundalaxselect11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\fundalaxselect1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="butonax7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\butonax7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundalax" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\fundalax.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DiceSet3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\DiceSet3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tabla2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\tabla2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DiceSet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\DiceSet1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundalaxselect2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\fundalaxselect2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="butonax5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\butonax5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DiceSet2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\DiceSet2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundalaxwin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\fundalaxwin1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundalaxwin3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\fundalaxwin3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundalaxselect1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\fundalaxselect1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundalaxset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\fundalaxset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="butonax6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\butonax6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundalaxwin2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\fundalaxwin2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundalaxwin4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\fundalaxwin4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
