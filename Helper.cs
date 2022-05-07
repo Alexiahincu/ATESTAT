@@ -21,8 +21,5 @@ namespace ATESTAT {
             this.Close();
         }
 
-        private void RichTextBox1_TextChanged(object sender, EventArgs e) {
-
-        }
     }
 }

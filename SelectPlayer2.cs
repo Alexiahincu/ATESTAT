@@ -56,9 +56,7 @@ namespace ATESTAT {
             }
         }
 
-        private void SelectPlayer2_Load(object sender, EventArgs e) {
-
-        }
+        
     }
 
 }

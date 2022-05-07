@@ -83,7 +83,6 @@
             this.Controls.Add(this.button1);
             this.Name = "SelectPlayer2";
             this.Text = "Select Player 2";
-            this.Load += new System.EventHandler(this.SelectPlayer2_Load);
             this.ResumeLayout(false);
 
         }
