@@ -11,6 +11,7 @@ using System.Windows.Forms;
 namespace ATESTAT {
     public partial class RedWins : Form {
         public RedWins() {
+            this.ControlBox = false;
             InitializeComponent();
         }
 

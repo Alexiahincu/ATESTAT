@@ -93,7 +93,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Start";
-            this.Text = "Nu te supara frate!";
+            this.Text = "Don\'t Get Angry!";
             this.ResumeLayout(false);
 
         }

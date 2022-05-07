@@ -11,6 +11,7 @@ using System.Windows.Forms;
 namespace ATESTAT {
     public partial class YellowWins : Form {
         public YellowWins() {
+            this.ControlBox = false;
             InitializeComponent();
         }
 

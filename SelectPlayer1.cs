@@ -15,6 +15,7 @@ namespace ATESTAT {
         public static List<Color> colorList = new List<Color>();
         public static bool ok = false;
         public SelectPlayer1() {
+            this.ControlBox = false;
             InitializeComponent();
             colorList.Add(new Color("Red", 1, false, false));
             colorList.Add(new Color("Yellow", 2, false, false));

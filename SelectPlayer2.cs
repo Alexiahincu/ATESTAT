@@ -24,7 +24,6 @@ namespace ATESTAT {
                     if (c.Name == color2)
                         c.Definitive = true;
                 }
-
                 SelectPlayer1.playerList.Add(new Player(listBox1.SelectedItem.ToString(), 2, true));
                 Form mod = new Game();
                 mod.Owner = this;

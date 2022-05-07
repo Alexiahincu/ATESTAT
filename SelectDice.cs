@@ -13,9 +13,7 @@ namespace ATESTAT {
         public static int diceNumber;
         public static bool selectedDice = false;
         public SelectDice() {
-            
             this.ControlBox = false;
-
             InitializeComponent();
         }
 
@@ -25,7 +23,7 @@ namespace ATESTAT {
                 this.Close();
                 selectedDice = false;
             } else {
-                MessageBox.Show("Please select a dice!");
+                MessageBox.Show("Please select the dice!");
 
             }
         }
