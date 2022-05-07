@@ -15,6 +15,8 @@ namespace ATESTAT {
         public SelectPlayer2() {
             InitializeComponent();
             this.ControlBox = false;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
 

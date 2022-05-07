@@ -14,6 +14,8 @@ namespace ATESTAT {
             InitializeComponent();
             richTextBox1.ReadOnly = true;
             this.ControlBox = false;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void Button1_Click(object sender, EventArgs e) {

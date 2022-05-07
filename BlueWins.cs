@@ -12,6 +12,8 @@ namespace ATESTAT {
     public partial class BlueWins : Form {
         public BlueWins() {
             this.ControlBox = false;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
         }
 

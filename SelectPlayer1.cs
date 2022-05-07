@@ -16,6 +16,8 @@ namespace ATESTAT {
         public static bool ok = false;
         public SelectPlayer1() {
             this.ControlBox = false;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
             colorList.Add(new Color("Red", 1, false, false));
             colorList.Add(new Color("Yellow", 2, false, false));

@@ -14,6 +14,8 @@ namespace ATESTAT {
         public static bool selectedDice = false;
         public SelectDice() {
             this.ControlBox = false;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
         }
 

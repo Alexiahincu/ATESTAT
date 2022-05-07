@@ -14,8 +14,10 @@ namespace ATESTAT {
         public static int[] playerPosition = new int[3];
         public static int[] positionLine = new int[3];
         public static bool finished = false;
-        public Game() {    
-        InitializeComponent();
+        public Game() {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            InitializeComponent();
             playerPosition[1] = playerPosition[2] = 0;
             positionLine[1] = positionLine[2] = 1;
         this.ControlBox = false;
