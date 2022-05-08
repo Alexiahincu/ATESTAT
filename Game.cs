@@ -72,307 +72,163 @@ namespace ATESTAT {
 
     private void Button2_Click(object sender, EventArgs e) {
         click++;
-        int x = 0, y = 0;
+        int x = 0, y = 0, turn = 0;
         Random nr = new Random();
         x = nr.Next(1, 7);
         y = x + SelectDice.diceNumber;
-        panel1.BackgroundImage = Image.FromFile(y + ".png");       
-        if(click%2==1) {
-                foreach (Player p in SelectPlayer1.playerList) {
-                    if(p.Number==1) {
-                        switch(p.Color) {
-                            case "Red": {
-                                    if (playerPosition[1] + x <= 50) {
-                                        while (x > 0) {
-                                            if (playerPosition[1] == 0) {
-                                                pictureBox2.Left += 75;
-                                                playerPosition[1]++;
-                                                x--;
-                                            }
-                                            while (playerPosition[1] % 7 != 0 && x > 0) {
-                                                if (positionLine[1] % 2 == 1)
-                                                    pictureBox2.Left += 75;
-                                                else
-                                                    pictureBox2.Left -= 75;
-                                                x--;
-                                                playerPosition[1]++;
-                                            }
-                                            if (x > 0) {
-                                                if (positionLine[1] != 7)
-                                                    pictureBox2.Top -= 88;
-                                                else
-                                                    pictureBox2.Left += 75;
-                                                x--;
-                                                playerPosition[1]++;
-                                                positionLine[1]++;
-                                            }
-                                        }
-                                    }
-                                    if (playerPosition[1] == 50) {
-                                        Form mod = new RedWins();
-                                        mod.Owner = this;
-                                        mod.Show();
-                                        this.Hide();
-                                    }
-                                    break;
-                                }
-                            case "Yellow": {
-                                    if (playerPosition[1] + x <= 50) {
-                                        while (x > 0) {
-                                            if (playerPosition[1] == 0) {
-                                                pictureBox3.Left += 75;
-                                                playerPosition[1]++;
-                                                x--;
-                                            }
-                                            while (playerPosition[1] % 7 != 0 && x > 0) {
-                                                if (positionLine[1] % 2 == 1)
-                                                    pictureBox3.Left += 75;
-                                                else
-                                                    pictureBox3.Left -= 75;
-                                                x--;
-                                                playerPosition[1]++;
-                                            }
-                                            if (x > 0) {
-                                                if (positionLine[1] != 7)
-                                                    pictureBox3.Top -= 88;
-                                                else
-                                                    pictureBox3.Left += 75;
-                                                x--;
-                                                playerPosition[1]++;
-                                                positionLine[1]++;
-                                            }
-                                        }
-                                    }
-                                    if (playerPosition[1] == 50) {
-                                        Form mod = new YellowWins();
-                                        mod.Owner = this;
-                                        mod.Show();
-                                        this.Hide();
-                                    }
-                                    break;
-                                }
-                            case "Blue": {
-                                    if (playerPosition[1] + x <= 50) {
-                                        while (x > 0) {
-                                            if (playerPosition[1] == 0) {
-                                                pictureBox4.Left += 75;
-                                                playerPosition[1]++;
-                                                x--;
-                                            }
-                                            while (playerPosition[1] % 7 != 0 && x > 0) {
-                                                if (positionLine[1] % 2 == 1)
-                                                    pictureBox4.Left += 75;
-                                                else
-                                                    pictureBox4.Left -= 75;
-                                                x--;
-                                                playerPosition[1]++;
-                                            }
-                                            if (x > 0) {
-                                                if (positionLine[1] != 7)
-                                                    pictureBox4.Top -= 88;
-                                                else
-                                                    pictureBox4.Left += 75;
-                                                x--;
-                                                playerPosition[1]++;
-                                                positionLine[1]++;
-                                            }
-                                        }
-                                    }
-                                    if (playerPosition[1] == 50) {
-                                        Form mod = new BlueWins();
-                                        mod.Owner = this;
-                                        mod.Show();
-                                        this.Hide();
-                                    }
-                                    break;
-                                }
-                            case "Green": {
-                                    if (playerPosition[1] + x <= 50) {
-                                        while (x > 0) {
-                                            if (playerPosition[1] == 0) {
-                                                pictureBox5.Left += 75;
-                                                playerPosition[1]++;
-                                                x--;
-                                            }
-                                            while (playerPosition[1] % 7 != 0 && x > 0) {
-                                                if (positionLine[1] % 2 == 1)
-                                                    pictureBox5.Left += 75;
-                                                else
-                                                    pictureBox5.Left -= 75;
-                                                x--;
-                                                playerPosition[1]++;
-                                            }
-                                            if (x > 0) {
-                                                if (positionLine[1] != 7)
-                                                    pictureBox5.Top -= 88;
-                                                else
-                                                    pictureBox5.Left += 75;
-                                                x--;
-                                                playerPosition[1]++;
-                                                positionLine[1]++;
-                                            }
-                                        }
-                                    }
-                                    if (playerPosition[1] == 50) {
-                                        Form mod = new GreenWins();
-                                        mod.Owner = this;
-                                        mod.Show();
-                                        this.Hide();
-                                    }
-                                    break;
-                                }
-                        }
-                    }
-                }
-            }
+        panel1.BackgroundImage = Image.FromFile(y + ".png");
+        if (click % 2 == 1) {
+            turn = 1;
+        }
         else {
-                foreach (Player p in SelectPlayer1.playerList) {
-                    if (p.Number == 2) {
-                        switch (p.Color) {
-                            case "Red": {
-                                    if (playerPosition[2] + x <= 50) {
-                                        while (x > 0) {
-                                            if (playerPosition[2] == 0) {
-                                                pictureBox2.Left += 75;
-                                                playerPosition[2]++;
-                                                x--;
-                                            }
-                                            while (playerPosition[2] % 7 != 0 && x > 0) {
-                                                if (positionLine[2] % 2 == 1)
-                                                    pictureBox2.Left += 75;
-                                                else
-                                                    pictureBox2.Left -= 75;
-                                                x--;
-                                                playerPosition[2]++;
-                                            }
-                                            if (x > 0) {
-                                                if (positionLine[2] != 7)
-                                                    pictureBox2.Top -= 88;
-                                                else
-                                                    pictureBox2.Left += 75;
-                                                x--;
-                                                playerPosition[2]++;
-                                                positionLine[2]++;
-                                            }
-                                        }
-                                    }
-                                    if (playerPosition[2] == 50) {
-                                        Form mod = new RedWins();
-                                        mod.Owner = this;
-                                        mod.Show();
-                                        this.Hide();
-                                    }
-                                    break;
+            turn = 2;
+        }
+        foreach (Player p in SelectPlayer1.playerList) {
+            if(p.Number==turn) {
+                switch (p.Color) {
+                    case "Red": {
+                        if (playerPosition[turn] + x <= 50) {
+                            while (x > 0) {
+                                if (playerPosition[turn] == 0) {
+                                   pictureBox2.Left += 75;
+                                    playerPosition[turn]++;
+                                    x--;
                                 }
-                            case "Yellow": {
-                                    if (playerPosition[2] + x <= 50) {
-                                        while (x > 0) {
-                                            if (playerPosition[2] == 0) {
-                                                pictureBox3.Left += 75;
-                                                playerPosition[2]++;
-                                                x--;
-                                            }
-                                            while (playerPosition[2] % 7 != 0 && x > 0) {
-                                                if (positionLine[2] % 2 == 1)
-                                                    pictureBox3.Left += 75;
-                                                else
-                                                    pictureBox3.Left -= 75;
-                                                x--;
-                                                playerPosition[2]++;
-                                            }
-                                            if (x > 0) {
-                                                if (positionLine[2] != 7)
-                                                    pictureBox3.Top -= 88;
-                                                else
-                                                    pictureBox3.Left += 75;
-                                                x--;
-                                                playerPosition[2]++;
-                                                positionLine[2]++;
-                                            }
-                                        }
-                                    }
-                                    if (playerPosition[2] == 50) {
-                                        Form mod = new YellowWins();
-                                        mod.Owner = this;
-                                        mod.Show();
-                                        this.Hide();
-                                    }
-                                    break;
+                                while (playerPosition[turn] % 7 != 0 && x > 0) {
+                                    if (positionLine[turn] % 2 == 1)
+                                        pictureBox2.Left += 75;
+                                    else
+                                        pictureBox2.Left -= 75;
+                                        x--;
+                                    playerPosition[turn]++;
                                 }
-                            case "Blue": {
-                                    if (playerPosition[2] + x <= 50) {
-                                        while (x > 0) {
-                                            if (playerPosition[2] == 0) {
-                                                pictureBox4.Left += 75;
-                                                playerPosition[2]++;
-                                                x--;
-                                            }
-                                            while (playerPosition[2] % 7 != 0 && x > 0) {
-                                                if (positionLine[2] % 2 == 1)
-                                                    pictureBox4.Left += 75;
-                                                else
-                                                    pictureBox4.Left -= 75;
-                                                x--;
-                                                playerPosition[2]++;
-                                            }
-                                            if (x > 0) {
-                                                if (positionLine[2] != 7)
-                                                    pictureBox4.Top -= 88;
-                                                else
-                                                    pictureBox4.Left += 75;
-                                                x--;
-                                                playerPosition[2]++;
-                                                positionLine[2]++;
-                                            }
-                                        }
-                                    }
-                                    if (playerPosition[2] == 50) {
-                                        Form mod = new BlueWins();
-                                        mod.Owner = this;
-                                        mod.Show();
-                                        this.Hide();
-                                    }
-                                    break;
+                                if (x > 0) {
+                                    if (positionLine[turn] != 7)
+                                        pictureBox2.Top -= 88;
+                                    else
+                                        pictureBox2.Left += 75;
+                                    x--;
+                                    playerPosition[turn]++;
+                                    positionLine[turn]++;
                                 }
-                            case "Green": {
-                                    if (playerPosition[2] + x <= 50) {
-                                        while (x > 0) {
-                                            if (playerPosition[2] == 0) {
-                                                pictureBox5.Left += 75;
-                                                playerPosition[2]++;
-                                                x--;
-                                            }
-                                            while (playerPosition[2] % 7 != 0 && x > 0) {
-                                                if (positionLine[2] % 2 == 1)
-                                                    pictureBox5.Left += 75;
-                                                else
-                                                    pictureBox5.Left -= 75;
-                                                x--;
-                                                playerPosition[2]++;
-                                            }
-                                            if (x > 0) {
-                                                if (positionLine[2] != 7)
-                                                    pictureBox5.Top -= 88;
-                                                else
-                                                    pictureBox5.Left += 75;
-                                                x--;
-                                                playerPosition[2]++;
-                                                positionLine[2]++;
-                                            }
-                                        }
-                                    }
-                                    if(playerPosition[2]==50) {
-                                        Form mod = new GreenWins();
-                                        mod.Owner = this;
-                                        mod.Show();
-                                        this.Hide();
-                                    }
-                                    break;
-                                }
+                            }
                         }
+                        if (playerPosition[turn] == 50) {
+                            Form mod = new RedWins();
+                            mod.Owner = this;
+                            mod.Show();
+                            this.Hide();
+                        }
+                        break;
+                    }
+                    case "Yellow": {
+                        if (playerPosition[turn] + x <= 50) {
+                            while (x > 0) {
+                                if (playerPosition[turn] == 0) {
+                                    pictureBox3.Left += 75;
+                                    playerPosition[turn]++;
+                                    x--;
+                                }
+                                while (playerPosition[turn] % 7 != 0 && x > 0) {
+                                    if (positionLine[turn] % 2 == 1)
+                                        pictureBox3.Left += 75;
+                                    else
+                                        pictureBox3.Left -= 75;
+                                    x--;
+                                    playerPosition[turn]++;
+                                }
+                                if (x > 0) {
+                                    if (positionLine[turn] != 7)
+                                        pictureBox3.Top -= 88;
+                                    else
+                                        pictureBox3.Left += 75;
+                                    x--;
+                                    playerPosition[turn]++;
+                                    positionLine[turn]++;
+                                }
+                            }
+                        }
+                        if (playerPosition[turn] == 50) {
+                            Form mod = new YellowWins();
+                            mod.Owner = this;
+                            mod.Show();
+                            this.Hide();
+                        }
+                        break;
+                    }
+                    case "Blue": {
+                        if (playerPosition[turn] + x <= 50) {
+                            while (x > 0) {
+                                if (playerPosition[turn] == 0) {
+                                    pictureBox4.Left += 75;
+                                    playerPosition[turn]++;
+                                    x--;
+                                }
+                                while (playerPosition[turn] % 7 != 0 && x > 0) {
+                                    if (positionLine[turn] % 2 == 1)
+                                        pictureBox4.Left += 75;
+                                    else
+                                        pictureBox4.Left -= 75;
+                                    x--;
+                                    playerPosition[turn]++;
+                                }
+                                if (x > 0) {
+                                    if (positionLine[turn] != 7)
+                                        pictureBox4.Top -= 88;
+                                    else
+                                        pictureBox4.Left += 75;
+                                    x--;
+                                    playerPosition[turn]++;
+                                    positionLine[turn]++;
+                                }
+                            }
+                        }
+                        if (playerPosition[turn] == 50) {
+                            Form mod = new BlueWins();
+                            mod.Owner = this;
+                            mod.Show();
+                            this.Hide();
+                        }
+                        break;
+                    }
+                    case "Green": {
+                        if (playerPosition[turn] + x <= 50) {
+                            while (x > 0) {
+                                if (playerPosition[turn] == 0) {
+                                    pictureBox5.Left += 75;
+                                    playerPosition[turn]++;
+                                    x--;
+                                }
+                                while (playerPosition[turn] % 7 != 0 && x > 0) {
+                                    if (positionLine[turn] % 2 == 1)
+                                        pictureBox5.Left += 75;
+                                    else
+                                        pictureBox5.Left -= 75;
+                                        x--;
+                                        playerPosition[turn]++;
+                                }
+                                if (x > 0) {
+                                    if (positionLine[turn] != 7)
+                                        pictureBox5.Top -= 88;
+                                    else
+                                        pictureBox5.Left += 75;
+                                    x--;
+                                    playerPosition[turn]++;
+                                    positionLine[turn]++;
+                                }
+                            }
+                        }
+                        if (playerPosition[turn] == 50) {
+                            Form mod = new GreenWins();
+                            mod.Owner = this;
+                            mod.Show();
+                            this.Hide();
+                        }
+                        break;
                     }
                 }
             }
+        }
         }
     }
 }
