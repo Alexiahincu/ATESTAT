@@ -32,5 +32,8 @@ namespace ATESTAT {
             get { return definitive; }
             set { definitive = value; }
         }
+        ~Color() {
+            System.Windows.Forms.MessageBox.Show("Player deleted");
+        }
     }
 }

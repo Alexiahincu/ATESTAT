@@ -20,7 +20,7 @@ namespace ATESTAT {
             InitializeComponent();
             playerPosition[1] = playerPosition[2] = 0;
             positionLine[1] = positionLine[2] = 1;
-        this.ControlBox = false;
+            this.ControlBox = false;
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
             pictureBox4.Visible = false;
@@ -52,6 +52,7 @@ namespace ATESTAT {
         }
              public static int click = 0;
              public static bool redFound, yelFound, bluFound, grnFound;
+
     private void Button1_Click(object sender, EventArgs e) {
         string message = "Do you want to close this window?";
         string title = "Close Window";

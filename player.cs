@@ -26,7 +26,9 @@ namespace ATESTAT {
             get { return used; }
             set { used = value; }
         }
-
+        ~Player() {
+            System.Windows.Forms.MessageBox.Show("Color deleted");
+        }
     }
 }
 
